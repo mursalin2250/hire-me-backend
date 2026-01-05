@@ -35,7 +35,11 @@ const userSchema = new mongoose.Schema({
     },
     refreshToken: {
         type: String
-    }
+    },
+    application: [{
+        type: mongoose.Types.ObjectId,
+        ref: "Application"
+    }]
 });
 
 const user = mongoose.model("User", userSchema);
