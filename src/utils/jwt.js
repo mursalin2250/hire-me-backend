@@ -6,3 +6,9 @@ export const accessTokenGenerator = (data) => {
     const token = jwt.sign({_id, username, role}, JWT_SECRET,{expiresIn: ACCESS_TOKEN_EXPIRES_IN});
     return token;
 }
+
+export const refreshTokenGenerator = (data) => {
+    const {_id, username, role} = data;
+    const token = jwt.sign({_id, username, role}, JWT_SECRET,{expiresIn: REFRESH_TOKEN_EXPIRES_IN});
+    return token;
+}

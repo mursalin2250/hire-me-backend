@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
     res.send("Hire me app running successfully!");
 })
 
-app.get("/api", appRoute);
+app.use("/api", appRoute);
 
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`)

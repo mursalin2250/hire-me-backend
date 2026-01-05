@@ -1,6 +1,6 @@
 import joi from "joi";
 
-export const createUserValidator = () => {
+export const createUserValidatorSchema = () => {
     joi.object({
         name: joi.string().min(5).max(40).required(),
         username: joi.string().alphanum().min(3).required(),
