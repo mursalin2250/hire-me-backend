@@ -73,16 +73,16 @@ export const updateUserService = async (filter, data) => {
     return user;
 }
 
-export const deleteUserService = async (user_id, data) => {
-    const user = await userModel.findOne({_id: user_id});
+export const deleteUserService = async (filter, data) => {
+    const user = await userModel.findOne({$or: [{username: filter.username}, {email: filter.email}, {_id: filter.id}]});
 
     if(!user){
         throw new Error("User not found!");
     }
 
-    await comparePassword(data.password, data.confirmPassword);
+    await comparePassword(data.password, user.password);
 
-    const deletedUser = await userModel.findOneAndDelete(user_id);
+    const deletedUser = await userModel.findOneAndDelete(user._id);
 
     const deleteUser = deletedUser.toObject();
         

@@ -1,4 +1,4 @@
-import { accessTokenService, changePasswordService, createUserService, getAllUsersService, getUserService, loginUserService, updateUserService } from "./user.service.js";
+import { accessTokenService, changePasswordService, createUserService, deleteUserService, getAllUsersService, getUserService, loginUserService, updateUserService } from "./user.service.js";
 import generateResponse from "../../utils/generateResponse.js";
 
 export const createUser = async (req,res) => {
@@ -74,7 +74,7 @@ export const changePassword = async (req,res) => {
 
 export const deleteUser = async (req,res) => {
     try {
-        const deletedUser = await deleteUserService(req.user.id, req.body);
+        const deletedUser = await deleteUserService(req.query, req.body);
         res.status(200).json(generateResponse(true, 200, "User deleted successfully!", deletedUser));
     } catch (error) {
         console.log(error);
