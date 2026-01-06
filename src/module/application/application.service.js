@@ -32,8 +32,8 @@ export const getAllApplicationService = async () => {
     return application;
 }
 
-export const updateApplicationService = async (id, data) => {
-    const application = await applicationModel.findOneAndUpdate({_id: id}, data, {new: true});
+export const updateApplicationService = async (filter, data) => {
+    const application = await applicationModel.findOneAndUpdate({_id: filter.id}, data, {new: true});
     if(!application) {
         throw new Error("No application found!")
     };

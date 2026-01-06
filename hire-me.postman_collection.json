@@ -1,0 +1,2019 @@
+{
+	"info": {
+		"_postman_id": "42190904-d562-4154-9875-544295a8ab1c",
+		"name": "Hire Me",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45503477",
+		"_collection_link": "https://mohammadmursalin.postman.co/workspace/Mohammad-Mursalin's-Workspace~65445d06-a532-4bcb-8cef-2cafa48ce6cb/collection/45503477-42190904-d562-4154-9875-544295a8ab1c?action=share&source=collection_link&creator=45503477"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NDc4OWRmOTE0ZWJlMDJiZmM1YzA1NSIsInVzZXJuYW1lIjoiYXJpZmFobWVkMDAiLCJyb2xlIjoidXNlciIsImlhdCI6MTc2NjI5NjAzMywiZXhwIjoxNzY2Mjk2OTMzfQ.KBkb5Cs9SpS5kFpuJEctlb_4tdcoQNenGBWXr3GKjNI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Mohammad Mursalin\",\r\n    \"username\": \"mursalin2250\",\r\n    \"email\": \"mursalin2250@gmail.com\",\r\n    \"password\": \"hello world\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/user/",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Mohammad Mursalin\",\r\n    \"username\": \"mursalin2250\",\r\n    \"email\": \"mursalin2250@gmail.com\",\r\n    \"password\": \"hello world\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseurl}}/user/",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"user",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "239"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ef-8Zfqd3SjOaHOa28COWlVVsjfN1s\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 05 Jan 2026 20:11:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 201,\n    \"message\": \"user created successfully\",\n    \"data\": {\n        \"name\": \"Mohammad Mursalin\",\n        \"username\": \"mursalin2250\",\n        \"email\": \"mursalin2250@gmail.com\",\n        \"role\": \"job seeker\",\n        \"status\": \"active\",\n        \"_id\": \"695c1adb1ff25b4f1e0896ae\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Login User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"mursalin2250\",\r\n    \"password\": \"hello world\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/user/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"mursalin2250@gmail.com\",\r\n    \"password\": \"hello world\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseurl}}/user/login",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"user",
+										"login"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "653"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28d-O62F7kxCrKvUt1YEul/4Kd+7ROI\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 05 Jan 2026 22:37:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 201,\n    \"message\": \"user logged in successfully\",\n    \"data\": {\n        \"user\": {\n            \"application\": [],\n            \"_id\": \"695c1adb1ff25b4f1e0896ae\",\n            \"name\": \"Mohammad Mursalin\",\n            \"username\": \"mursalin2250\",\n            \"email\": \"mursalin2250@gmail.com\",\n            \"role\": \"admin\",\n            \"status\": \"active\",\n            \"jobApplications\": []\n        },\n        \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTVjMWFkYjFmZjI1YjRmMWUwODk2YWUiLCJpYXQiOjE3Njc2NTI2MzQsImV4cCI6MTc2NzY1MzUzNH0.3lsgfZHfKXwXEq2caqlLywqX-bH4AodgdT6KkuyDMt8\",\n        \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWMxYWRiMWZmMjViNGYxZTA4OTZhZSIsImlhdCI6MTc2NzY1MjYzNCwiZXhwIjoxNzcwMjQ0NjM0fQ.z0PazS4ORPNh1LroMV1BtkoIDXv0Cpb7h9JX4S3RNwg\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2NTM1NDksImV4cCI6MTc2NzY1NDQ0OX0.JTc0H5orrHMGLthcliqhKNuNo1f5qaAnqOMsdpRazNE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/user/all",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"user",
+								"all"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseurl}}/user/all",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"user",
+										"all"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "262"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"106-ErzX1mh2Dmi9ot8F2lE3u6xk6H0\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 05 Jan 2026 22:54:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"message\": \"All user fetched\",\n    \"data\": [\n        {\n            \"_id\": \"695c1adb1ff25b4f1e0896ae\",\n            \"name\": \"Mohammad Mursalin\",\n            \"username\": \"mursalin2250\",\n            \"email\": \"mursalin2250@gmail.com\",\n            \"role\": \"admin\",\n            \"status\": \"active\",\n            \"application\": [\n                \"695c3f0814f83835aca38755\"\n            ]\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get User Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2NzMzNzAsImV4cCI6MTc2NzY3NDI3MH0.JS1c1hj0sSayond4ZDdKChaNXCyb69H05OTTwsfFyB8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"mursalin2250\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/user/?username=mursalin2250",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"user",
+								""
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "mursalin2250"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get User Copy",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"mursalin2250\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseurl}}/user/?username=mursalin2250",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"user",
+										""
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "mursalin2250"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "895"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"37f-H9ClK3i/9NVM4fDJN9a3As/jYT8\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jan 2026 04:29:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"message\": \"User fetched successfully!\",\n    \"data\": {\n        \"_id\": \"6947af5bc9a945d62cca3267\",\n        \"name\": \"Mohammad Mursalin\",\n        \"username\": \"mursalin2250\",\n        \"email\": \"mursalin2250@gmail.com\",\n        \"createdAt\": \"2025-12-21T08:27:07.812Z\",\n        \"updatedAt\": \"2025-12-29T06:03:51.509Z\",\n        \"refreshtoken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NDdhZjViYzlhOTQ1ZDYyY2NhMzI2NyIsImlhdCI6MTc2Njk4NzY2MCwiZXhwIjoxNzY5NTc5NjYwfQ.FaBtQJT5m20W_A685VtX9r4Ab6J6vggMPSx2Ce20nYg\",\n        \"otp\": \"381695\",\n        \"otpExpireTime\": \"2025-12-29T06:08:51.504Z\",\n        \"application\": [\n            {\n                \"_id\": \"695c8a8cac9a8680a0575326\",\n                \"jobId\": \"695c85d4a865d25e17e96aff\",\n                \"jobSeekerId\": \"6947af5bc9a945d62cca3267\",\n                \"cvPath\": \"C:\\\\Users\\\\Mohammd Mursalin\\\\Documents\\\\mursalin\\\\hire-me-backend\\\\uploads\\\\1767672460429-208187427.pdf\",\n                \"applicationStatus\": \"pending\",\n                \"createdAt\": \"2026-01-06T04:07:40.436Z\",\n                \"updatedAt\": \"2026-01-06T04:07:40.436Z\",\n                \"__v\": 0\n            }\n        ],\n        \"status\": \"active\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Access Token Generate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NDc4OWRmOTE0ZWJlMDJiZmM1YzA1NSIsInVzZXJuYW1lIjoiYXJpZmFobWVkMDAiLCJyb2xlIjoidXNlciIsImlhdCI6MTc2NjI5NjAzMywiZXhwIjoxNzY2Mjk2OTMzfQ.KBkb5Cs9SpS5kFpuJEctlb_4tdcoQNenGBWXr3GKjNI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NDdhZjViYzlhOTQ1ZDYyY2NhMzI2NyIsImlhdCI6MTc2NzY2OTM0NywiZXhwIjoxNzcwMjYxMzQ3fQ.r6mIZwF4VcSHpx_jLqvbQ56bjRWjKFv8xg3E3eYIkaY\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/user/token",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"user",
+								"token"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{   \r\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWMxYWRiMWZmMjViNGYxZTA4OTZhZSIsImlhdCI6MTc2NzY1MjYzNCwiZXhwIjoxNzcwMjQ0NjM0fQ.z0PazS4ORPNh1LroMV1BtkoIDXv0Cpb7h9JX4S3RNwg\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseurl}}/user/token",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"user",
+										"token"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "216"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"d8-s1GlpXt5thwuzhWTUMcZu7jV+XY\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 05 Jan 2026 22:52:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"message\": \"Token generated successfully\",\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2NTM1NDksImV4cCI6MTc2NzY1NDQ0OX0.JTc0H5orrHMGLthcliqhKNuNo1f5qaAnqOMsdpRazNE\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2NzMzNzAsImV4cCI6MTc2NzY3NDI3MH0.JS1c1hj0sSayond4ZDdKChaNXCyb69H05OTTwsfFyB8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Md. Mursalin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/user/update?username=mursalin2250",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"user",
+								"update"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "mursalin2250"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update User",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Md. Mursalin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseurl}}/user/update?username=mursalin2250",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"user",
+										"update"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "mursalin2250"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "861"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"35d-jDYjbiXiJBn0UF6hk7C6qbKppXI\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jan 2026 04:32:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"message\": \"User updated successfully!\",\n    \"data\": {\n        \"_id\": \"6947af5bc9a945d62cca3267\",\n        \"name\": \"Md. Mursalin\",\n        \"username\": \"mursalin2250\",\n        \"email\": \"mursalin2250@gmail.com\",\n        \"password\": \"$2b$10$usuSalAosmAfQ2gOhGsCDORALSDgiQ0hWZ0uQaHnDLxPRycBwJ.pu\",\n        \"role\": \"admin\",\n        \"createdAt\": \"2025-12-21T08:27:07.812Z\",\n        \"updatedAt\": \"2025-12-29T06:03:51.509Z\",\n        \"__v\": 1,\n        \"refreshtoken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NDdhZjViYzlhOTQ1ZDYyY2NhMzI2NyIsImlhdCI6MTc2Njk4NzY2MCwiZXhwIjoxNzY5NTc5NjYwfQ.FaBtQJT5m20W_A685VtX9r4Ab6J6vggMPSx2Ce20nYg\",\n        \"otp\": \"381695\",\n        \"otpExpireTime\": \"2025-12-29T06:08:51.504Z\",\n        \"application\": [\n            \"695c8a8cac9a8680a0575326\"\n        ],\n        \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NDdhZjViYzlhOTQ1ZDYyY2NhMzI2NyIsImlhdCI6MTc2NzY2OTM0NywiZXhwIjoxNzcwMjYxMzQ3fQ.r6mIZwF4VcSHpx_jLqvbQ56bjRWjKFv8xg3E3eYIkaY\",\n        \"status\": \"active\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Job",
+			"item": [
+				{
+					"name": "Create Job",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2NzIyNDgsImV4cCI6MTc2NzY3MzE0OH0.OKtF6Kn0DX3vtb7JAN8X4SfciSAUnZTWKX76Ya_KoZk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"SEO Specialist\",\r\n    \"description\": \"International It company\",\r\n    \"companyId\": \"695c82654c1c00d695a8d304\",\r\n    \"postedBy\":\"6947af5bc9a945d62cca3267\",\r\n    \"salary\": 20000,\r\n    \"status\": \"open\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/job/",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"job",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Job",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"UI/UX Designer (Fresher)\",\r\n    \"description\": \"International It company\",\r\n    \"companyId\": \"695bd6d088a1ec9ad71af739\",\r\n    \"postedBy\":\"695bc1169f1206360ccc90e7\",\r\n    \"salary\": 20000,\r\n    \"status\": \"open\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseurl}}/job/",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"job",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "315"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"13b-Hnq9YFCzw8gkqvHkbqrQCl7hfNY\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jan 2026 03:24:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 201,\n    \"message\": \"Job created Successfully\",\n    \"data\": {\n        \"title\": \"UI/UX Designer (Fresher)\",\n        \"description\": \"International It company\",\n        \"companyId\": \"695bd6d088a1ec9ad71af739\",\n        \"application\": [],\n        \"postedBy\": \"695bc1169f1206360ccc90e7\",\n        \"salary\": 20000,\n        \"status\": \"open\",\n        \"_id\": \"695c80614c1c00d695a8d2f6\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Job",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTQ3YWY1YmM5YTk0NWQ2MmNjYTMyNjciLCJpYXQiOjE3Njc2NjkzNDcsImV4cCI6MTc2NzY3MDI0N30.tPtoZDn3POYsWuV8cpc1840BwWtOXEuteKLjwZmOf1w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"UI/UX Designer (Fresher)\",\r\n    \"description\": \"International It company\",\r\n    \"companyId\": \"sfasfsdfsfa\",\r\n    \"postedBy\":\"695bc1169f1206360ccc90e7\",\r\n    \"salary\": 20000,\r\n    \"status\": \"open\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/job/all",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"job",
+								"all"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Job",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"UI/UX Designer (Fresher)\",\r\n    \"description\": \"International It company\",\r\n    \"companyId\": \"sfasfsdfsfa\",\r\n    \"postedBy\":\"695bc1169f1206360ccc90e7\",\r\n    \"salary\": 20000,\r\n    \"status\": \"open\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseurl}}/job/all",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"job",
+										"all"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "310"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"136-cl2N+x67L0cc4uMvnmiNS/vKQ6s\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jan 2026 03:24:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 201,\n    \"message\": \"Jobs fetched Successfully\",\n    \"data\": [\n        {\n            \"_id\": \"695c80614c1c00d695a8d2f6\",\n            \"title\": \"UI/UX Designer (Fresher)\",\n            \"description\": \"International It company\",\n            \"companyId\": \"695bd6d088a1ec9ad71af739\",\n            \"application\": [],\n            \"postedBy\": \"695bc1169f1206360ccc90e7\",\n            \"salary\": 20000,\n            \"status\": \"open\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Job",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTQ3YWY1YmM5YTk0NWQ2MmNjYTMyNjciLCJpYXQiOjE3Njc2NjkzNDcsImV4cCI6MTc2NzY3MDI0N30.tPtoZDn3POYsWuV8cpc1840BwWtOXEuteKLjwZmOf1w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"companyId\": \"695bd6d088a1ec9ad71af739\",\r\n    \"title\": \"UI/UX Designer (Fresher)\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/job/",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"job",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Job",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"companyId\": \"695bd6d088a1ec9ad71af739\",\r\n    \"title\": \"UI/UX Designer (Fresher)\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseurl}}/job/",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"job",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "263"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"107-aX6hwOjJrcDIzhxlzZDzSw5NGs8\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jan 2026 03:27:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 201,\n    \"message\": \"Job fetched Successfully\",\n    \"data\": {\n        \"_id\": \"695c80614c1c00d695a8d2f6\",\n        \"title\": \"UI/UX Designer (Fresher)\",\n        \"description\": \"International It company\",\n        \"companyId\": null,\n        \"application\": [],\n        \"postedBy\": null,\n        \"salary\": 20000,\n        \"status\": \"open\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Job",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTQ3YWY1YmM5YTk0NWQ2MmNjYTMyNjciLCJpYXQiOjE3Njc2NjkzNDcsImV4cCI6MTc2NzY3MDI0N30.tPtoZDn3POYsWuV8cpc1840BwWtOXEuteKLjwZmOf1w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Front End Developer (Fresher)\",\r\n    \"status\": \"close\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/job/?id=695c80614c1c00d695a8d2f6",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"job",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "695c80614c1c00d695a8d2f6"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Job",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"Front End Developer (Fresher)\",\r\n    \"status\": \"close\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseurl}}/job/?id=695c80614c1c00d695a8d2f6",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"job",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "695c80614c1c00d695a8d2f6"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "321"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"141-5nMWk/AYZp9DLEzojEEQGnag8s0\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jan 2026 03:28:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 201,\n    \"message\": \"Job updated Successfully\",\n    \"data\": {\n        \"_id\": \"695c80614c1c00d695a8d2f6\",\n        \"title\": \"Front End Developer (Fresher)\",\n        \"description\": \"International It company\",\n        \"companyId\": \"695bd6d088a1ec9ad71af739\",\n        \"application\": [],\n        \"postedBy\": \"695bc1169f1206360ccc90e7\",\n        \"salary\": 20000,\n        \"status\": \"close\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Job",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2NzIyNDgsImV4cCI6MTc2NzY3MzE0OH0.OKtF6Kn0DX3vtb7JAN8X4SfciSAUnZTWKX76Ya_KoZk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/job/?id=695c80614c1c00d695a8d2f6",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"job",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "695c80614c1c00d695a8d2f6"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "Create Company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2NzAzNjEsImV4cCI6MTc2NzY3MTI2MX0.cuVEmF9a18q8TuojOblUegi63452q3bEJmWVYC5qwZE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"SM Technology\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/company/",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"company",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Company",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"SM Technology\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseurl}}/company/",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"company",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "150"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"96-5TMRnpkjuwzxXZcn+AmQDnJcoqU\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jan 2026 03:32:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 201,\n    \"message\": \"Company created Successfully\",\n    \"data\": {\n        \"name\": \"SM Technology\",\n        \"job\": [],\n        \"_id\": \"695c82654c1c00d695a8d304\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get All Company",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2NzEyMDksImV4cCI6MTc2NzY3MjEwOX0.XmWPP1NpeQboYKH2ODtWNYp4tSEvSHLLAVmw-rDZE0U",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"SM Technology\"\r\n}"
+						},
+						"url": {
+							"raw": "{{baseurl}}/company/all",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"company",
+								"all"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"SM Technology\"\r\n}"
+								},
+								"url": {
+									"raw": "{{baseurl}}/company/all",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"company",
+										"all"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "172"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ac-vd9Ri7BEW2XD+fLPeJyrt/gXuQs\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jan 2026 03:47:50 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 201,\n    \"message\": \"Companies fetched Successfully\",\n    \"data\": [\n        {\n            \"_id\": \"695c82654c1c00d695a8d304\",\n            \"name\": \"SM Technology\",\n            \"job\": [\n                \"695c85d4a865d25e17e96aff\"\n            ]\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2NzEzODYsImV4cCI6MTc2NzY3MjI4Nn0.5lrJWtAgLEWGRR5dGisIkAcaRYUgzSWUDSG0alvB608",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/company/?id=695c82654c1c00d695a8d304",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"company",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "695c82654c1c00d695a8d304"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseurl}}/company/?id=695c82654c1c00d695a8d304",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"company",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "695c82654c1c00d695a8d304"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "375"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"177-nmzSkaUrXwDLhjT5pZUmpoE0jPM\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jan 2026 03:56:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 201,\n    \"message\": \"Company fetched Successfully\",\n    \"data\": {\n        \"_id\": \"695c82654c1c00d695a8d304\",\n        \"name\": \"SM Technology\",\n        \"job\": [\n            {\n                \"_id\": \"695c85d4a865d25e17e96aff\",\n                \"title\": \"SEO Specialist\",\n                \"description\": \"International It company\",\n                \"companyId\": \"695c82654c1c00d695a8d304\",\n                \"application\": [],\n                \"postedBy\": \"6947af5bc9a945d62cca3267\",\n                \"salary\": 20000,\n                \"status\": \"open\",\n                \"__v\": 0\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2NzE4ODgsImV4cCI6MTc2NzY3Mjc4OH0.Y-y-VK8i_ofumSKHWWSNbjaTlMvWonPeEXHAJViAPoI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"SM Tech\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/company/?id=695c82654c1c00d695a8d304",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"company",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "695c82654c1c00d695a8d304"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"SM Tech\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseurl}}/company/?id=695c82654c1c00d695a8d304",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"company",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "695c82654c1c00d695a8d304"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "170"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"aa-m976Y19Pgk1p3RGaUhMDnk3H/UA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jan 2026 04:01:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 201,\n    \"message\": \"Company updated Successfully\",\n    \"data\": {\n        \"_id\": \"695c82654c1c00d695a8d304\",\n        \"name\": \"SM Tech\",\n        \"job\": [\n            \"695c85d4a865d25e17e96aff\"\n        ],\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2NzE4ODgsImV4cCI6MTc2NzY3Mjc4OH0.Y-y-VK8i_ofumSKHWWSNbjaTlMvWonPeEXHAJViAPoI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"SM Tech\"\r\n}"
+						},
+						"url": {
+							"raw": "{{baseurl}}/company/?id=695c82654c1c00d695a8d304",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"company",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "695c82654c1c00d695a8d304"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Application",
+			"item": [
+				{
+					"name": "Create Application",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2NzIyNDgsImV4cCI6MTc2NzY3MzE0OH0.OKtF6Kn0DX3vtb7JAN8X4SfciSAUnZTWKX76Ya_KoZk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cv",
+									"type": "file",
+									"src": "/C:/Users/Mohammd Mursalin/Downloads/Mursalin Document.pdf"
+								},
+								{
+									"key": "jobId",
+									"value": "695c85d4a865d25e17e96aff",
+									"type": "text"
+								},
+								{
+									"key": "jobSeekerId",
+									"value": "6947af5bc9a945d62cca3267",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseurl}}/application/",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"application",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "cv",
+											"type": "file",
+											"src": "/C:/Users/Mohammd Mursalin/Downloads/BDRAILWAY_TICKET1317111401316-3020-411411-1115111-1115141761665070.pdf"
+										},
+										{
+											"key": "jobId",
+											"value": "695c85d4a865d25e17e96aff",
+											"type": "text"
+										},
+										{
+											"key": "jobSeekerId",
+											"value": "6947af5bc9a945d62cca3267",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseurl}}/application/",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"application",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "422"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a6-G4KyWx6NrzUMrSw0LU4kdamAEks\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jan 2026 04:07:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 201,\n    \"message\": \"Application Created Successfully!\",\n    \"data\": {\n        \"jobId\": \"695c85d4a865d25e17e96aff\",\n        \"jobSeekerId\": \"6947af5bc9a945d62cca3267\",\n        \"cvPath\": \"C:\\\\Users\\\\Mohammd Mursalin\\\\Documents\\\\mursalin\\\\hire-me-backend\\\\uploads\\\\1767672460429-208187427.pdf\",\n        \"applicationStatus\": \"pending\",\n        \"_id\": \"695c8a8cac9a8680a0575326\",\n        \"createdAt\": \"2026-01-06T04:07:40.436Z\",\n        \"updatedAt\": \"2026-01-06T04:07:40.436Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get  All Application",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2NzIyNDgsImV4cCI6MTc2NzY3MzE0OH0.OKtF6Kn0DX3vtb7JAN8X4SfciSAUnZTWKX76Ya_KoZk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cv",
+									"type": "file",
+									"src": "/C:/Users/Mohammd Mursalin/Downloads/BDRAILWAY_TICKET1317111401316-3020-411411-1115111-1115141761665070.pdf"
+								},
+								{
+									"key": "jobId",
+									"value": "695c85d4a865d25e17e96aff",
+									"type": "text"
+								},
+								{
+									"key": "jobSeekerId",
+									"value": "6947af5bc9a945d62cca3267",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseurl}}/application/all",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"application",
+								"all"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "cv",
+											"type": "file",
+											"src": "/C:/Users/Mohammd Mursalin/Downloads/BDRAILWAY_TICKET1317111401316-3020-411411-1115111-1115141761665070.pdf"
+										},
+										{
+											"key": "jobId",
+											"value": "695c85d4a865d25e17e96aff",
+											"type": "text"
+										},
+										{
+											"key": "jobSeekerId",
+											"value": "6947af5bc9a945d62cca3267",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseurl}}/application/all",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"application",
+										"all"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "416"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a0-6OlsZ78F7N1xYux0AoM7GvawPV8\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jan 2026 04:22:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 201,\n    \"message\": \"Applications fetched Successfully\",\n    \"data\": [\n        {\n            \"_id\": \"695c8a8cac9a8680a0575326\",\n            \"jobId\": \"695c85d4a865d25e17e96aff\",\n            \"jobSeekerId\": \"6947af5bc9a945d62cca3267\",\n            \"cvPath\": \"C:\\\\Users\\\\Mohammd Mursalin\\\\Documents\\\\mursalin\\\\hire-me-backend\\\\uploads\\\\1767672460429-208187427.pdf\",\n            \"applicationStatus\": \"pending\",\n            \"createdAt\": \"2026-01-06T04:07:40.436Z\",\n            \"updatedAt\": \"2026-01-06T04:07:40.436Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Application",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2NzMzNzAsImV4cCI6MTc2NzY3NDI3MH0.JS1c1hj0sSayond4ZDdKChaNXCyb69H05OTTwsfFyB8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/application/?id=695c8a8cac9a8680a0575326",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"application",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "695c8a8cac9a8680a0575326"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseurl}}/application/?id=695c8a8cac9a8680a0575326",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"application",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "695c8a8cac9a8680a0575326"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "413"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"19d-8EEqAoPEKm5Agcxjb7DjKodpEj4\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jan 2026 04:22:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 201,\n    \"message\": \"Application fetched Successfully\",\n    \"data\": {\n        \"_id\": \"695c8a8cac9a8680a0575326\",\n        \"jobId\": \"695c85d4a865d25e17e96aff\",\n        \"jobSeekerId\": \"6947af5bc9a945d62cca3267\",\n        \"cvPath\": \"C:\\\\Users\\\\Mohammd Mursalin\\\\Documents\\\\mursalin\\\\hire-me-backend\\\\uploads\\\\1767672460429-208187427.pdf\",\n        \"applicationStatus\": \"pending\",\n        \"createdAt\": \"2026-01-06T04:07:40.436Z\",\n        \"updatedAt\": \"2026-01-06T04:07:40.436Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Application",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2NzMzNzAsImV4cCI6MTc2NzY3NDI3MH0.JS1c1hj0sSayond4ZDdKChaNXCyb69H05OTTwsfFyB8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cv",
+									"type": "file",
+									"src": "/C:/Users/Mohammd Mursalin/Downloads/Mursalin Document.pdf"
+								},
+								{
+									"key": "jobId",
+									"value": "695c85d4a865d25e17e96aff",
+									"type": "text"
+								},
+								{
+									"key": "jobSeekerId",
+									"value": "6952180acb1c2ea4dfa72016",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseurl}}/application/?id=695c8a8cac9a8680a0575326",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"application",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "695c8a8cac9a8680a0575326"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "cv",
+											"type": "file",
+											"src": "/C:/Users/Mohammd Mursalin/Downloads/Mursalin Document.pdf"
+										},
+										{
+											"key": "jobId",
+											"value": "695c85d4a865d25e17e96aff",
+											"type": "text"
+										},
+										{
+											"key": "jobSeekerId",
+											"value": "6952180acb1c2ea4dfa72016",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseurl}}/application/?id=695c8a8cac9a8680a0575326",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"application",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "695c8a8cac9a8680a0575326"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "421"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a5-s+xvaagBHWWEOZwNnN1ZLsmMlHI\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jan 2026 04:28:24 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 201,\n    \"message\": \"Application updated Successfully\",\n    \"data\": {\n        \"_id\": \"695c8a8cac9a8680a0575326\",\n        \"jobId\": \"695c85d4a865d25e17e96aff\",\n        \"jobSeekerId\": \"6947af5bc9a945d62cca3267\",\n        \"cvPath\": \"C:\\\\Users\\\\Mohammd Mursalin\\\\Documents\\\\mursalin\\\\hire-me-backend\\\\uploads\\\\1767672460429-208187427.pdf\",\n        \"applicationStatus\": \"pending\",\n        \"createdAt\": \"2026-01-06T04:07:40.436Z\",\n        \"updatedAt\": \"2026-01-06T04:07:40.436Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Application",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2NzIyNDgsImV4cCI6MTc2NzY3MzE0OH0.OKtF6Kn0DX3vtb7JAN8X4SfciSAUnZTWKX76Ya_KoZk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseurl}}/application/?id=695c8a8cac9a8680a0575326",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"application",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "695c8a8cac9a8680a0575326"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseurl",
+			"value": "",
+			"type": "default"
+		}
+	]
+}

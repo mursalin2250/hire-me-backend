@@ -18,6 +18,7 @@ export const loginUserValidatorSchema = joi.object({
 }).xor("username", "email");
 
 export const updateUserValidatorSchema = joi.object({
+    name: joi.string().min(5),
     username: joi.string().alphanum().min(3),
     email: joi.string().email(),
     password: joi.forbidden()
