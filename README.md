@@ -95,12 +95,12 @@ ACCESS_TOKEN_EXPIRES_IN = time_limit_for_access_token
 REFRESH_TOKEN_EXPIRES_IN = time_limit_for_refresh_token
 
 ▶️ Getting Started <br>
-1️⃣ Clone the Repository
-git clone https://github.com/your-username/hireme-backend.git
-cd hireme-backend
-2️⃣ Install Dependencies
-npm install
-3️⃣ Configure Environment Variables
+1️⃣ Clone the Repository <br>
+git clone https://github.com/your-username/hireme-backend.git <br>
+cd hireme-backend <br>
+2️⃣ Install Dependencies <br>
+npm install <br>
+3️⃣ Configure Environment Variables <br>
 
 Create a .env file and add the required values (see above).
 
