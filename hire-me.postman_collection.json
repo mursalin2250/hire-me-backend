@@ -1020,7 +1020,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTQ3YWY1YmM5YTk0NWQ2MmNjYTMyNjciLCJpYXQiOjE3Njc2NjkzNDcsImV4cCI6MTc2NzY3MDI0N30.tPtoZDn3POYsWuV8cpc1840BwWtOXEuteKLjwZmOf1w",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2ODE2NjMsImV4cCI6MTc2NzY4MjU2M30.hmn36ItzzB5dVxbiEEZARNQ4xDvOy0rV9kD_Fawfjcc",
 									"type": "string"
 								}
 							]
@@ -1029,7 +1029,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"companyId\": \"695bd6d088a1ec9ad71af739\",\r\n    \"title\": \"UI/UX Designer (Fresher)\"\r\n}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1037,13 +1037,19 @@
 							}
 						},
 						"url": {
-							"raw": "{{baseurl}}/job/",
+							"raw": "{{baseurl}}/job/?id=695caac0dcd931524ed8f7d6",
 							"host": [
 								"{{baseurl}}"
 							],
 							"path": [
 								"job",
 								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "695caac0dcd931524ed8f7d6"
+								}
 							]
 						}
 					},
@@ -1108,6 +1114,73 @@
 							],
 							"cookie": [],
 							"body": "{\n    \"success\": true,\n    \"code\": 201,\n    \"message\": \"Job fetched Successfully\",\n    \"data\": {\n        \"_id\": \"695c80614c1c00d695a8d2f6\",\n        \"title\": \"UI/UX Designer (Fresher)\",\n        \"description\": \"International It company\",\n        \"companyId\": null,\n        \"application\": [],\n        \"postedBy\": null,\n        \"salary\": 20000,\n        \"status\": \"open\"\n    }\n}"
+						},
+						{
+							"name": "Get Job",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseurl}}/job/?id=695caac0dcd931524ed8f7d6",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"job",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "695caac0dcd931524ed8f7d6"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "659"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"293-pQOp4a5jhNXnQi6MYIARliPl0Kc\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jan 2026 06:43:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 201,\n    \"message\": \"Job fetched Successfully\",\n    \"data\": {\n        \"_id\": \"695caac0dcd931524ed8f7d6\",\n        \"title\": \"SQA Engineer\",\n        \"description\": \"International It company\",\n        \"companyId\": null,\n        \"application\": [\n            {\n                \"_id\": \"695caf013db9ebc8c5c18e3a\",\n                \"jobId\": \"695caac0dcd931524ed8f7d6\",\n                \"jobSeekerId\": \"6947af5bc9a945d62cca3267\",\n                \"cvPath\": \"C:\\\\Users\\\\Mohammd Mursalin\\\\Documents\\\\mursalin\\\\hire-me-backend\\\\uploads\\\\1767681793395-970796079.pdf\",\n                \"applicationStatus\": \"pending\",\n                \"createdAt\": \"2026-01-06T06:43:13.402Z\",\n                \"updatedAt\": \"2026-01-06T06:43:13.402Z\",\n                \"__v\": 0\n            }\n        ],\n        \"postedBy\": {\n            \"_id\": \"6947af5bc9a945d62cca3267\",\n            \"name\": \"Md. Mursalin\",\n            \"role\": \"admin\"\n        },\n        \"salary\": 20000,\n        \"status\": \"open\"\n    }\n}"
 						}
 					]
 				},
@@ -1814,7 +1887,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2ODA2MDIsImV4cCI6MTc2NzY4MTUwMn0.kpA91Ne_EKf6UDTGUd4I9TKAtDOtiKVSnWet3dY-UZA",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2ODE2NjMsImV4cCI6MTc2NzY4MjU2M30.hmn36ItzzB5dVxbiEEZARNQ4xDvOy0rV9kD_Fawfjcc",
 									"type": "string"
 								}
 							]
@@ -1831,7 +1904,7 @@
 								},
 								{
 									"key": "jobId",
-									"value": "695c85d4a865d25e17e96aff",
+									"value": "695caac0dcd931524ed8f7d6",
 									"type": "text"
 								},
 								{
@@ -1924,6 +1997,78 @@
 							],
 							"cookie": [],
 							"body": "{\n    \"success\": true,\n    \"code\": 201,\n    \"message\": \"Application Created Successfully!\",\n    \"data\": {\n        \"jobId\": \"695c85d4a865d25e17e96aff\",\n        \"jobSeekerId\": \"6947af5bc9a945d62cca3267\",\n        \"cvPath\": \"C:\\\\Users\\\\Mohammd Mursalin\\\\Documents\\\\mursalin\\\\hire-me-backend\\\\uploads\\\\1767672460429-208187427.pdf\",\n        \"applicationStatus\": \"pending\",\n        \"_id\": \"695c8a8cac9a8680a0575326\",\n        \"createdAt\": \"2026-01-06T04:07:40.436Z\",\n        \"updatedAt\": \"2026-01-06T04:07:40.436Z\",\n        \"__v\": 0\n    }\n}"
+						},
+						{
+							"name": "Create Application",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "cv",
+											"type": "file",
+											"src": "/C:/Users/Mohammd Mursalin/Downloads/Mursalin Document.pdf"
+										},
+										{
+											"key": "jobId",
+											"value": "695caac0dcd931524ed8f7d6",
+											"type": "text"
+										},
+										{
+											"key": "jobSeekerId",
+											"value": "6947af5bc9a945d62cca3267",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseurl}}/application/",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"application",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "422"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a6-upm7g5iY0IcKqW9+C1r+5O/kleE\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jan 2026 06:43:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 201,\n    \"message\": \"Application Created Successfully!\",\n    \"data\": {\n        \"jobId\": \"695caac0dcd931524ed8f7d6\",\n        \"jobSeekerId\": \"6947af5bc9a945d62cca3267\",\n        \"cvPath\": \"C:\\\\Users\\\\Mohammd Mursalin\\\\Documents\\\\mursalin\\\\hire-me-backend\\\\uploads\\\\1767681793395-970796079.pdf\",\n        \"applicationStatus\": \"pending\",\n        \"_id\": \"695caf013db9ebc8c5c18e3a\",\n        \"createdAt\": \"2026-01-06T06:43:13.402Z\",\n        \"updatedAt\": \"2026-01-06T06:43:13.402Z\",\n        \"__v\": 0\n    }\n}"
 						}
 					]
 				},

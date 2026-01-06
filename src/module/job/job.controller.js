@@ -13,7 +13,7 @@ export const createJob = async (req,res) => {
 
 export const getJob = async (req,res) => {
     try {
-        const job = await getJobService(req.body);
+        const job = await getJobService(req.query);
         res.status(201).json(generateResponse(true, 201, "Job fetched Successfully", job))
     } catch (error) {
         console.log(error);

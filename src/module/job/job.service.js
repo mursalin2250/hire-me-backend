@@ -13,8 +13,8 @@ export const createJobService = async (data) => {
     return newJob;
 }
 
-export const getJobService = async (data) => {
-    const job = await jobModel.findOne({companyId: data.companyId, title: data.title}).select("-__v").populate("companyId", "name").populate("postedBy", "name role").populate("application");
+export const getJobService = async (filter) => {
+    const job = await jobModel.findOne({_id: filter.id}).select("-__v").populate("companyId", "name").populate("postedBy", "name role").populate("application");
     if(!job) {
         throw new Error("No job posting found!");
     }
