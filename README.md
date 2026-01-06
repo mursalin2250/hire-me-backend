@@ -1,4 +1,4 @@
-### HireMe – Job Posting Platform (Backend)
+# HireMe – Job Posting Platform (Backend)
 
 HireMe is a role-based job posting and application platform built with Node.js, Express, and MongoDB. The system supports Admins, Employees (Recruiters), and Job Seekers, enforcing strict access control using JWT authentication. Job seekers can browse jobs and apply by uploading their CVs, while recruiters manage job postings and applications.
 
