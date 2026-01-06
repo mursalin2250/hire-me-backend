@@ -6,7 +6,7 @@ import { authenticate, authorizeAdmin, authorizeEmployer } from "../../middlewar
 
 const router = express.Router();
 
-router.post("/", authenticate, validator(createJobValidatorSchema), createJob);
+router.post("/", authenticate, authorizeEmployer, validator(createJobValidatorSchema), createJob);
 router.get("/", authenticate, validator(getJobValidatorSchema), getJob);
 router.get("/all", getAllJob);
 router.put("/", authenticate, authorizeEmployer, validator(updateJobValidatorSchema), updateJob);

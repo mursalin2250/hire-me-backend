@@ -10,8 +10,8 @@ export const createCompanyService = async (data) => {
     return newCompany;
 }
 
-export const getCompanyService = async (id) => {
-    const company = await companyModel.findOne({id}).select("-__v").populate("job");
+export const getCompanyService = async (data) => {
+    const company = await companyModel.findOne({_id: data.id}).select("-__v").populate("job");
     if(!company) {
         throw new Error("No company found!");
     };
@@ -27,8 +27,9 @@ export const getAllCompanyService = async () => {
     return company;
 }
 
-export const updateCompanyService = async (id, data) => {
-    const company = await companyModel.findOneAndUpdate({_id: id}, data, {new: true});
+export const updateCompanyService = async (filter, data) => {
+    console.log(filter.id);
+    const company = await companyModel.findOneAndUpdate({_id: filter.id}, data, {new: true});
     if(!company) {
         throw new Error("No company found!")
     };
@@ -36,8 +37,8 @@ export const updateCompanyService = async (id, data) => {
     return company;
 }
 
-export const deleteCompanyService = async (id, data) => {
-    const company = await companyModel.findOneAndDelete({_id: id});
+export const deleteCompanyService = async (filter) => {
+    const company = await companyModel.findOneAndDelete({_id: filter.id});
     if(!company){
         throw new Error("No company found!");
     }

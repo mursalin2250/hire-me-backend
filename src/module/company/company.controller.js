@@ -13,8 +13,8 @@ export const createCompany = async (req,res) => {
 
 export const getCompany = async (req,res) => {
     try {
-        const company = await getCompanyService(req.body);
-        res.status(201).json(generateResponse(true, 201, "Company fetched Successfully", company))
+        const company = await getCompanyService(req.query);
+        res.status(200).json(generateResponse(true, 201, "Company fetched Successfully", company))
     } catch (error) {
         console.log(error);
         res.status(500).json(generateResponse(false, 500, error.message, null));
@@ -33,7 +33,7 @@ export const getAllCompany = async (req,res) => {
 
 export const updateCompany = async (req,res) => {
     try {
-        const company = await updateCompanyService(req.body);
+        const company = await updateCompanyService(req.query, req.body);
         res.status(201).json(generateResponse(true, 201, "Company updated Successfully", company))
     } catch (error) {
         console.log(error);
@@ -43,7 +43,7 @@ export const updateCompany = async (req,res) => {
 
 export const deleteCompany = async (req,res) => {
     try {
-        const company = await deleteCompanyService(req.body);
+        const company = await deleteCompanyService(req.query);
         res.status(201).json(generateResponse(true, 201, "Company delete Successfully", company))
     } catch (error) {
         console.log(error);

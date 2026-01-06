@@ -43,7 +43,7 @@ export const updateJob = async (req,res) => {
 
 export const deleteJob = async (req,res) => {
     try {
-        const job = await deleteJobService(req.body);
+        const job = await deleteJobService(req.query);
         res.status(201).json(generateResponse(true, 201, "Job delete Successfully", job))
     } catch (error) {
         console.log(error);

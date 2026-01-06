@@ -33,7 +33,7 @@ export const getAllApplication = async (req,res) => {
 
 export const updateApplication = async (req,res) => {
     try {
-        const application = await updateApplicationService(req.body);
+        const application = await updateApplicationService(req.query, req.body);
         res.status(201).json(generateResponse(true, 201, "Application updated Successfully", application));
     } catch (error) {
         console.log(error);
@@ -43,7 +43,7 @@ export const updateApplication = async (req,res) => {
 
 export const deleteApplication = async (req,res) => {
     try {
-        const application = await deleteApplicationService(req.body);
+        const application = await deleteApplicationService(req.query);
         res.status(201).json(generateResponse(true, 201, "Application deleted Successfully", application));
     } catch (error) {
         console.log(error);

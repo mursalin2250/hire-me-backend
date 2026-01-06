@@ -9,7 +9,7 @@ export const createJobService = async (data) => {
     }
     
     const newJob = await jobModel.create(data);
-    await companyModel.findById(newJob.companyId, {$push: {job: _id}});
+    await companyModel.findByIdAndUpdate(newJob.companyId, {$push: {job: newJob._id}});
     return newJob;
 }
 
@@ -37,8 +37,8 @@ export const updateJobService = async (filter, data) => {
     return job;
 }
 
-export const deleteJobService = async (_id) => {
-    const job = await jobModel.findOneAndDelete({_id});
+export const deleteJobService = async (filter) => {
+    const job = await jobModel.findOneAndDelete({_id: filter.id});
 
     if(!job){
         throw new Error("No job posting found!");

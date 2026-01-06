@@ -9,7 +9,7 @@ app.use(express.json());
 connectDB();
 
 app.get("/", (req, res) => {
-    res.send("Hire me app running successfully!");
+    res.send("HireMe - Job Posting Platform!");
 })
 
 app.use("/api", appRoute);
