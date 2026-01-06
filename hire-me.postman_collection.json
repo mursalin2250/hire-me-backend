@@ -604,6 +604,216 @@
 							"body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"message\": \"User updated successfully!\",\n    \"data\": {\n        \"_id\": \"6947af5bc9a945d62cca3267\",\n        \"name\": \"Md. Mursalin\",\n        \"username\": \"mursalin2250\",\n        \"email\": \"mursalin2250@gmail.com\",\n        \"password\": \"$2b$10$usuSalAosmAfQ2gOhGsCDORALSDgiQ0hWZ0uQaHnDLxPRycBwJ.pu\",\n        \"role\": \"admin\",\n        \"createdAt\": \"2025-12-21T08:27:07.812Z\",\n        \"updatedAt\": \"2025-12-29T06:03:51.509Z\",\n        \"__v\": 1,\n        \"refreshtoken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NDdhZjViYzlhOTQ1ZDYyY2NhMzI2NyIsImlhdCI6MTc2Njk4NzY2MCwiZXhwIjoxNzY5NTc5NjYwfQ.FaBtQJT5m20W_A685VtX9r4Ab6J6vggMPSx2Ce20nYg\",\n        \"otp\": \"381695\",\n        \"otpExpireTime\": \"2025-12-29T06:08:51.504Z\",\n        \"application\": [\n            \"695c8a8cac9a8680a0575326\"\n        ],\n        \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NDdhZjViYzlhOTQ1ZDYyY2NhMzI2NyIsImlhdCI6MTc2NzY2OTM0NywiZXhwIjoxNzcwMjYxMzQ3fQ.r6mIZwF4VcSHpx_jLqvbQ56bjRWjKFv8xg3E3eYIkaY\",\n        \"status\": \"active\"\n    }\n}"
 						}
 					]
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2NzYzNjQsImV4cCI6MTc2NzY3NzI2NH0.AiR5xT6EEFgz2VpqGV-UN9N9LpgdZ5VaQx9wmfBmnEA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"hello world\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/user/delete?username=kirti",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"user",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "kirti"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\": \"hello world\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseurl}}/user/delete?username=kirti",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"user",
+										"delete"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "kirti"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "470"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1d6-KTO9IDa4T6InnaQ7oDQTZoXSsMo\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jan 2026 05:17:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"message\": \"User deleted successfully!\",\n    \"data\": {\n        \"status\": \"active\",\n        \"application\": [],\n        \"_id\": \"6952180acb1c2ea4dfa72016\",\n        \"name\": \"kirti\",\n        \"username\": \"kirti\",\n        \"email\": \"kirti@gmail.com\",\n        \"createdAt\": \"2025-12-29T05:56:26.867Z\",\n        \"updatedAt\": \"2025-12-29T05:56:26.875Z\",\n        \"refreshtoken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NTIxODBhY2IxYzJlYTRkZmE3MjAxNiIsImlhdCI6MTc2Njk4Nzc4NiwiZXhwIjoxNzY5NTc5Nzg2fQ.UMLBRflNJng1NfHO3lWa1EBNfIsYH05dPG86Ctn49Lc\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NDdhZjViYzlhOTQ1ZDYyY2NhMzI2NyIsImlhdCI6MTc2NzY3ODg4MywiZXhwIjoxNzcwMjcwODgzfQ.Qm0S-hiHQET6JHKWiMFNwqspAtH9L87KS5kHQB3iV2g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \r\n    \"currentPassword\": \"BdCalling@123\",\r\n    \"newPassword\": \"hello world\",\r\n    \"confirmPassword\": \"hello world\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/user/change-password",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"user",
+								"change-password"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{   \r\n    \"currentPassword\": \"BdCalling@123\",\r\n    \"newPassword\": \"hello world\",\r\n    \"confirmPassword\": \"hello world\" \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseurl}}/user/change-password",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"user",
+										"change-password"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "70"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"46-0Zhlo6lEjFeydUGozusEVyjI/L4\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jan 2026 05:56:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 200,\n    \"message\": \"Password changed successfully!\"\n}"
+						}
+					]
 				}
 			]
 		},

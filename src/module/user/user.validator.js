@@ -34,7 +34,7 @@ export const accessTokenValidatorSchema = joi.object({
 
 export const changePasswordValidatorSchema = joi.object({
     currentPassword: joi.string().required(),
-    password: joi.string().required(),
+    newPassword: joi.string().required(),
     confirmPassword: joi.string().required()
 });
 
