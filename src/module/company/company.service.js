@@ -2,7 +2,7 @@ import companyModel from "./company.model.js";
 
 export const createCompanyService = async (data) => {
 
-    const company = await companyModel.findOne({title: data.title});
+    const company = await companyModel.findOne({name: data.name});
     if(company){
         throw new Error("Company already Exists!");
     }
