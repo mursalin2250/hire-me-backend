@@ -94,7 +94,7 @@ JWT_SECRET=your_jwt_secret
 ACCESS_TOKEN_EXPIRES_IN = time_limit_for_access_token 
 REFRESH_TOKEN_EXPIRES_IN = time_limit_for_refresh_token
 
-▶️ Getting Started
+▶️ Getting Started <br>
 1️⃣ Clone the Repository
 git clone https://github.com/your-username/hireme-backend.git
 cd hireme-backend
