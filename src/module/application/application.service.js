@@ -42,7 +42,7 @@ export const updateApplicationService = async (filter, data) => {
 }
 
 export const deleteApplicationService = async (filter) => {
-    const application = await jobModel.findOneAndDelete({_id: filter.id});
+    const application = await applicationModel.findOneAndDelete({_id: filter.id});
     if(!application){
         throw new Error("No application found!");
     }

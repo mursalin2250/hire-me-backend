@@ -412,7 +412,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{   \r\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NDdhZjViYzlhOTQ1ZDYyY2NhMzI2NyIsImlhdCI6MTc2NzY2OTM0NywiZXhwIjoxNzcwMjYxMzQ3fQ.r6mIZwF4VcSHpx_jLqvbQ56bjRWjKFv8xg3E3eYIkaY\"\r\n}",
+							"raw": "{   \r\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NDdhZjViYzlhOTQ1ZDYyY2NhMzI2NyIsImlhdCI6MTc2NzY3ODg4MywiZXhwIjoxNzcwMjcwODgzfQ.Qm0S-hiHQET6JHKWiMFNwqspAtH9L87KS5kHQB3iV2g\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -717,7 +717,7 @@
 					]
 				},
 				{
-					"name": "New Request",
+					"name": "Change Password",
 					"request": {
 						"auth": {
 							"type": "bearer",
@@ -828,7 +828,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2NzIyNDgsImV4cCI6MTc2NzY3MzE0OH0.OKtF6Kn0DX3vtb7JAN8X4SfciSAUnZTWKX76Ya_KoZk",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2ODA2MDIsImV4cCI6MTc2NzY4MTUwMn0.kpA91Ne_EKf6UDTGUd4I9TKAtDOtiKVSnWet3dY-UZA",
 									"type": "string"
 								}
 							]
@@ -837,7 +837,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"title\": \"SEO Specialist\",\r\n    \"description\": \"International It company\",\r\n    \"companyId\": \"695c82654c1c00d695a8d304\",\r\n    \"postedBy\":\"6947af5bc9a945d62cca3267\",\r\n    \"salary\": 20000,\r\n    \"status\": \"open\"\r\n}",
+							"raw": "{\r\n    \"title\": \"SQA Engineer\",\r\n    \"description\": \"International It company\",\r\n    \"companyId\": \"695c82654c1c00d695a8d304\",\r\n    \"postedBy\":\"6947af5bc9a945d62cca3267\",\r\n    \"salary\": 20000,\r\n    \"status\": \"open\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -921,31 +921,19 @@
 				},
 				{
 					"name": "Get All Job",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"auth": {
 							"type": "bearer",
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTQ3YWY1YmM5YTk0NWQ2MmNjYTMyNjciLCJpYXQiOjE3Njc2NjkzNDcsImV4cCI6MTc2NzY3MDI0N30.tPtoZDn3POYsWuV8cpc1840BwWtOXEuteKLjwZmOf1w",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2ODA2MDIsImV4cCI6MTc2NzY4MTUwMn0.kpA91Ne_EKf6UDTGUd4I9TKAtDOtiKVSnWet3dY-UZA",
 									"type": "string"
 								}
 							]
 						},
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"title\": \"UI/UX Designer (Fresher)\",\r\n    \"description\": \"International It company\",\r\n    \"companyId\": \"sfasfsdfsfa\",\r\n    \"postedBy\":\"695bc1169f1206360ccc90e7\",\r\n    \"salary\": 20000,\r\n    \"status\": \"open\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
 							"raw": "{{baseurl}}/job/all",
 							"host": [
@@ -1242,7 +1230,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2NzIyNDgsImV4cCI6MTc2NzY3MzE0OH0.OKtF6Kn0DX3vtb7JAN8X4SfciSAUnZTWKX76Ya_KoZk",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2ODA2MDIsImV4cCI6MTc2NzY4MTUwMn0.kpA91Ne_EKf6UDTGUd4I9TKAtDOtiKVSnWet3dY-UZA",
 									"type": "string"
 								}
 							]
@@ -1250,7 +1238,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "{{baseurl}}/job/?id=695c80614c1c00d695a8d2f6",
+							"raw": "{{baseurl}}/job/?id=695c85d4a865d25e17e96aff",
 							"host": [
 								"{{baseurl}}"
 							],
@@ -1261,12 +1249,71 @@
 							"query": [
 								{
 									"key": "id",
-									"value": "695c80614c1c00d695a8d2f6"
+									"value": "695c85d4a865d25e17e96aff"
 								}
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Delete Job",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseurl}}/job/?id=695c85d4a865d25e17e96aff",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"job",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "695c85d4a865d25e17e96aff"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "330"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"14a-nttRG2ga+SUC/F6Yf3Rw15BvJF4\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jan 2026 06:25:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 201,\n    \"message\": \"Job delete Successfully\",\n    \"data\": {\n        \"_id\": \"695c85d4a865d25e17e96aff\",\n        \"title\": \"SEO Specialist\",\n        \"description\": \"International It company\",\n        \"companyId\": \"695c82654c1c00d695a8d304\",\n        \"application\": [\n            \"695c8a8cac9a8680a0575326\"\n        ],\n        \"postedBy\": \"6947af5bc9a945d62cca3267\",\n        \"salary\": 20000,\n        \"status\": \"open\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
 				}
 			]
 		},
@@ -1281,7 +1328,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2NzAzNjEsImV4cCI6MTc2NzY3MTI2MX0.cuVEmF9a18q8TuojOblUegi63452q3bEJmWVYC5qwZE",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2ODA2MDIsImV4cCI6MTc2NzY4MTUwMn0.kpA91Ne_EKf6UDTGUd4I9TKAtDOtiKVSnWet3dY-UZA",
 									"type": "string"
 								}
 							]
@@ -1290,7 +1337,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"SM Technology\"\r\n}",
+							"raw": "{\r\n    \"name\": \"ScaleUp Agency\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1374,26 +1421,19 @@
 				},
 				{
 					"name": "Get All Company",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"auth": {
 							"type": "bearer",
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2NzEyMDksImV4cCI6MTc2NzY3MjEwOX0.XmWPP1NpeQboYKH2ODtWNYp4tSEvSHLLAVmw-rDZE0U",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2ODA2MDIsImV4cCI6MTc2NzY4MTUwMn0.kpA91Ne_EKf6UDTGUd4I9TKAtDOtiKVSnWet3dY-UZA",
 									"type": "string"
 								}
 							]
 						},
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"SM Technology\"\r\n}"
-						},
 						"url": {
 							"raw": "{{baseurl}}/company/all",
 							"host": [
@@ -1676,17 +1716,13 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2NzE4ODgsImV4cCI6MTc2NzY3Mjc4OH0.Y-y-VK8i_ofumSKHWWSNbjaTlMvWonPeEXHAJViAPoI",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2ODA2MDIsImV4cCI6MTc2NzY4MTUwMn0.kpA91Ne_EKf6UDTGUd4I9TKAtDOtiKVSnWet3dY-UZA",
 									"type": "string"
 								}
 							]
 						},
 						"method": "DELETE",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"SM Tech\"\r\n}"
-						},
 						"url": {
 							"raw": "{{baseurl}}/company/?id=695c82654c1c00d695a8d304",
 							"host": [
@@ -1704,7 +1740,66 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Delete Company",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseurl}}/company/?id=695c82654c1c00d695a8d304",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"company",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "695c82654c1c00d695a8d304"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "196"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c4-70DY2frdTOYEDyew2xkmq/HQp2Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jan 2026 06:29:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 201,\n    \"message\": \"Company delete Successfully\",\n    \"data\": {\n        \"_id\": \"695c82654c1c00d695a8d304\",\n        \"name\": \"SM Tech\",\n        \"job\": [\n            \"695c85d4a865d25e17e96aff\",\n            \"695caac0dcd931524ed8f7d6\"\n        ],\n        \"__v\": 0\n    }\n}"
+						}
+					]
 				}
 			]
 		},
@@ -1719,7 +1814,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2NzIyNDgsImV4cCI6MTc2NzY3MzE0OH0.OKtF6Kn0DX3vtb7JAN8X4SfciSAUnZTWKX76Ya_KoZk",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2ODA2MDIsImV4cCI6MTc2NzY4MTUwMn0.kpA91Ne_EKf6UDTGUd4I9TKAtDOtiKVSnWet3dY-UZA",
 									"type": "string"
 								}
 							]
@@ -2190,7 +2285,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2NzIyNDgsImV4cCI6MTc2NzY3MzE0OH0.OKtF6Kn0DX3vtb7JAN8X4SfciSAUnZTWKX76Ya_KoZk",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3Njc2ODA2MDIsImV4cCI6MTc2NzY4MTUwMn0.kpA91Ne_EKf6UDTGUd4I9TKAtDOtiKVSnWet3dY-UZA",
 									"type": "string"
 								}
 							]
@@ -2214,7 +2309,66 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Delete Application",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseurl}}/application/?id=695c8a8cac9a8680a0575326",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"application",
+										""
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "695c8a8cac9a8680a0575326"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "421"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a5-7wOOcEBHAioOCNu12eGU6Roq+HQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Jan 2026 06:31:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"code\": 201,\n    \"message\": \"Application deleted Successfully\",\n    \"data\": {\n        \"_id\": \"695c8a8cac9a8680a0575326\",\n        \"jobId\": \"695c85d4a865d25e17e96aff\",\n        \"jobSeekerId\": \"6947af5bc9a945d62cca3267\",\n        \"cvPath\": \"C:\\\\Users\\\\Mohammd Mursalin\\\\Documents\\\\mursalin\\\\hire-me-backend\\\\uploads\\\\1767672460429-208187427.pdf\",\n        \"applicationStatus\": \"pending\",\n        \"createdAt\": \"2026-01-06T04:07:40.436Z\",\n        \"updatedAt\": \"2026-01-06T04:07:40.436Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
 				}
 			]
 		}
