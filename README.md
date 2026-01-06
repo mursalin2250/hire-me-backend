@@ -86,19 +86,6 @@ Validation: Joi
 
 Environment Management: dotenv
 
-📂 Project Structure
-src/
-├── controllers/     # Request handlers
-├── routes/          # API route definitions
-├── models/          # Mongoose schemas
-├── middlewares/     # Auth, role checks, error handling
-├── validations/     # Joi validation schemas
-├── utils/           # Helpers and constants
-├── uploads/         # Uploaded CV files
-├── app.js           # Express app configuration
-└── server.js        # Server entry point
-🔑 Environment Variables
-
 Create a .env file in the root directory:
 
 PORT=5000
