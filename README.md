@@ -3,7 +3,7 @@
 HireMe is a role-based job posting and application platform built with Node.js, Express, and MongoDB. The system supports Admins, Employees (Recruiters), and Job Seekers, enforcing strict access control using JWT authentication. Job seekers can browse jobs and apply by uploading their CVs, while recruiters manage job postings and applications.
 
 🚀 Features Overview
-🔐 Authentication & Authorization
+## 🔐 Authentication & Authorization
 
 JWT-based authentication
 
@@ -11,7 +11,7 @@ Role-based access control (RBAC)
 
 Secure protected routes using middleware
 
-👥 Roles & Permissions
+## 👥 Roles & Permissions
 Admin
 
 Manage all users (create, update, delete)
@@ -38,7 +38,7 @@ Cannot apply to the same job more than once
 
 View personal application history
 
-📁 File Upload (CV / Resume)
+## 📁 File Upload (CV / Resume)
 
 Implemented using Multer (Disk Storage)
 
@@ -54,7 +54,7 @@ File type and size validation enforced
 
 Uploaded files are stored on the server filesystem (not in the database)
 
-🧾 Application Handling
+## 🧾 Application Handling
 
 Each job application stores:
 
@@ -70,7 +70,7 @@ Recruiters can update application status
 
 Admins can view all applications
 
-🛠 Tech Stack
+## 🛠 Tech Stack
 
 Runtime: Node.js
 
@@ -85,6 +85,65 @@ File Upload: Multer
 Validation: Joi
 
 Environment Management: dotenv
+
+📂 Project Structure
+
+src/ <br>
+├── config/ <br>
+│   ├── db.js  <br>
+│   └── envConfig.js <br>
+│<br>
+├── middleware/ <br>
+│   ├── auth.middleware.js <br>
+│   ├── multerConfig.js <br>
+│   ├── uploadValidator.middleware.js <br>
+│   └── validator.middleware.js <br>
+│<br>
+├── module/ <br>
+│   ├── application/ <br>
+│   │   ├── application.controller.js <br>
+│   │   ├── application.service.js <br>
+│   │   ├── application.model.js <br>
+│   │   ├── application.route.js <br>
+│   │   └── application.validator.js <br>
+│   │<br>
+│   ├── company/<br>
+│   │   ├── company.controller.js <br>
+│   │   ├── company.service.js <br>
+│   │   ├── company.model.js <br>
+│   │   ├── company.route.js <br>
+│   │   └── company.validator.js <br>
+│   │<br>
+│   ├── job/ <br>
+│   │   ├── job.controller.js <br>
+│   │   ├── job.service.js <br>
+│   │   ├── job.model.js <br>
+│   │   ├── job.route.js <br>
+│   │   └── job.validator.js <br>
+│   │<br>
+│   └── user/ <br>
+│       ├── user.controller.js <br>
+│       ├── user.service.js <br>
+│       ├── user.model.js <br>
+│       ├── user.route.js <br>
+│       └── user.validator.js <br>
+│ <br>
+├── utils/ <br>
+│   ├── generateResponse.js <br>
+│   ├── jwt.js <br>
+│   └── password.js <br>
+│<br>
+└── uploads/ <br>
+    └── *.pdf / *.docx <br>
+<br>
+root/ <br>
+├── app.js <br>
+├── server.js <br>
+├── package.json <br>
+├── hire-me-postman_collection.json <br>
+├── .env.example <br>
+├── .gitignore <br>
+└── README.md <br>
 
 Create a .env file in the root directory:
 
@@ -111,7 +170,7 @@ npm start
 
 Server will run on: http://localhost:5000
 
-📡 API Documentation
+## 📡 API Documentation
 
 Complete API documentation is available via Postman
 
@@ -127,7 +186,7 @@ Application management
 
 📁 Postman collection is included in the repository
 
-🔒 Security Considerations
+## 🔒 Security Considerations
 
 Passwords are securely hashed
 
@@ -137,7 +196,7 @@ Role validation middleware prevents unauthorized access
 
 File upload restrictions prevent invalid or oversized files
 
-📌 Future Improvements
+## 📌 Future Improvements
 
 Email notifications (application status updates)
 
@@ -147,6 +206,6 @@ Rate limiting and request logging
 
 Improved file storage
 
-📜 License
+## 📜 License
 
 This project is open-source and available for educational and learning purposes.
