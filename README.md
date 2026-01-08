@@ -75,23 +75,28 @@ JWT_SECRET=your_jwt_secret <br>
 ACCESS_TOKEN_EXPIRES_IN = time_limit_for_access_token <br> 
 REFRESH_TOKEN_EXPIRES_IN = time_limit_for_refresh_token <br>
 
-## ▶️ Getting Started <br><br>
+## ▶️ How to run application locally <br><br>
 1️⃣ Clone the Repository <br>
-`git clone https://github.com/your-username/hireme-backend.git` <br>
+```bash
+git clone https://github.com/your-username/hireme-backend.git <br>
 cd hireme-backend <br>
+```
 2️⃣ Install Dependencies <br>
+```bash
 npm install <br>
+```
 3️⃣ Configure Environment Variables <br>
 
 Create a .env file and add the required values (see above).
 
 4️⃣ Run the Server
+```bash
 npm run dev
-or
+#or
 npm start
 
 Server will run on: http://localhost:5000
-
+```
 ## 📡 API Documentation
 
 Complete API documentation is available via Postman
