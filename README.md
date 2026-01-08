@@ -69,11 +69,11 @@ Environment Management: dotenv
 
 Create a `.env` file in the root directory:
 ```bash
-PORT=5000
-MONGO_URI=your_mongodb_connection_string 
-JWT_SECRET=your_jwt_secret 
-ACCESS_TOKEN_EXPIRES_IN = time_limit_for_access_token  
-REFRESH_TOKEN_EXPIRES_IN = time_limit_for_refresh_token 
+PORT= 
+MONGO_URI=  
+JWT_SECRET=  
+ACCESS_TOKEN_EXPIRES_IN = 
+REFRESH_TOKEN_EXPIRES_IN =
 ```
 ## ▶️ How to run application locally <br><br>
 1️⃣ Clone the Repository <br>
