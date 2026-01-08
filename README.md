@@ -22,19 +22,16 @@ Secure protected routes using middleware
 
 ## 📁 File Upload (CV / Resume)
 
-Implemented using Multer (Disk Storage)
 
-Supported formats:
+Job seekers must upload a CV/resume when applying for a job.
 
-PDF (.pdf)
-
-DOCX (.docx)
-
-Maximum file size: 5MB
-
-File type and size validation enforced
-
-Uploaded files are stored on the server filesystem (not in the database)
+| Item               | Details |
+|--------------------|---------|
+| Upload Library     | Multer (Disk Storage) |
+| Allowed Formats    | PDF (`.pdf`), DOCX (`.docx`) |
+| Maximum File Size  | 5 MB |
+| Validation         | File type and size validation enforced |
+| Storage Method     | Server filesystem (files are not stored in the database) |
 
 ## 🧾 Application Handling
 
