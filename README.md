@@ -65,7 +65,9 @@ Validation: Joi
 
 Environment Management: dotenv
 
-## Create a .env file in the root directory:
+## 🛡️ Env Configuration
+
+Create a .env file in the root directory:
 
 PORT=5000 <br>
 MONGO_URI=your_mongodb_connection_string <br>
