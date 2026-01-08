@@ -78,12 +78,12 @@ REFRESH_TOKEN_EXPIRES_IN = time_limit_for_refresh_token <br>
 ## ▶️ How to run application locally <br><br>
 1️⃣ Clone the Repository <br>
 ```bash
-git clone https://github.com/your-username/hireme-backend.git <br>
-cd hireme-backend <br>
+git clone https://github.com/your-username/hireme-backend.git
+cd hireme-backend
 ```
 2️⃣ Install Dependencies <br>
 ```bash
-npm install <br>
+npm install
 ```
 3️⃣ Configure Environment Variables <br>
 
