@@ -67,14 +67,14 @@ Environment Management: dotenv
 
 ## 🛡️ Env Configuration
 
-Create a .env file in the root directory:
-
-PORT=5000 <br>
-MONGO_URI=your_mongodb_connection_string <br>
-JWT_SECRET=your_jwt_secret <br>
-ACCESS_TOKEN_EXPIRES_IN = time_limit_for_access_token <br> 
-REFRESH_TOKEN_EXPIRES_IN = time_limit_for_refresh_token <br>
-
+Create a `.env` file in the root directory:
+```bash
+PORT=5000
+MONGO_URI=your_mongodb_connection_string 
+JWT_SECRET=your_jwt_secret 
+ACCESS_TOKEN_EXPIRES_IN = time_limit_for_access_token  
+REFRESH_TOKEN_EXPIRES_IN = time_limit_for_refresh_token 
+```
 ## ▶️ How to run application locally <br><br>
 1️⃣ Clone the Repository <br>
 ```bash
@@ -87,7 +87,7 @@ npm install
 ```
 3️⃣ Configure Environment Variables <br>
 
-Create a .env file and add the required values (see above).
+Create a `.env` file and add the required values (see above).
 
 4️⃣ Run the Server
 ```bash
