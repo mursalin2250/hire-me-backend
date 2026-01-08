@@ -12,31 +12,14 @@ Role-based access control (RBAC)
 Secure protected routes using middleware
 
 ## 👥 Roles & Permissions
-Admin
+## 👥 Roles & Permissions
 
-Manage all users (create, update, delete)
+| Role                 | Permissions                                 |
+|----------------------|---------------------------------------------|
+| **Admin**             | - Manage all users (create, update, delete)<br>- View all jobs and applications<br>- Filter users, jobs, and applications |
+| **Employee (Recruiter)** | - Post, update, and delete jobs for their own company only<br>- View applicants for their jobs<br>- Accept or reject applications |
+| **Job Seeker**        | - View available job listings<br>- Apply for jobs (CV upload required)<br>- Cannot apply to the same job more than once<br>- View personal application history |
 
-View all jobs and applications
-
-Filter users, jobs, and applications
-
-Employee (Recruiter)
-
-Post, update, and delete jobs for their own company only
-
-View applicants for their jobs
-
-Accept or reject applications
-
-Job Seeker
-
-View available job listings
-
-Apply for jobs (CV upload required)
-
-Cannot apply to the same job more than once
-
-View personal application history
 
 ## 📁 File Upload (CV / Resume)
 
