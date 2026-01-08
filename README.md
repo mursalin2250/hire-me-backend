@@ -17,7 +17,7 @@ Secure protected routes using middleware
 | Role                 | Permissions                                 |
 |----------------------|---------------------------------------------|
 | **Admin**             | - Manage all users (create, update, delete)<br>- View all jobs and applications<br>- Filter users, jobs, and applications |
-| **Employee (Recruiter)** | - Post, update, and delete jobs for their own company only<br>- View applicants for their jobs<br>- Accept or reject applications |
+| **Employee (Recruiter)** | - Post, update, and delete jobs<br>- View applicants for their jobs<br>- Accept or reject applications |
 | **Job Seeker**        | - View available job listings<br>- Apply for jobs (CV upload required)<br>- Cannot apply to the same job more than once<br>- View personal application history |
 
 
