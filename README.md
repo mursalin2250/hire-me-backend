@@ -99,7 +99,7 @@ Server will run on: http://localhost:5000
 ```
 ## 📡 API Documentation
 
-Complete API documentation is available via Postman
+Complete API documentation (Postman): https://documenter.getpostman.com/view/45503477/2sBXVeGCux
 
 Includes:
 
