@@ -12,7 +12,6 @@ Role-based access control (RBAC)
 Secure protected routes using middleware
 
 ## 👥 Roles & Permissions
-## 👥 Roles & Permissions
 
 | Role                 | Permissions                                 |
 |----------------------|---------------------------------------------|
