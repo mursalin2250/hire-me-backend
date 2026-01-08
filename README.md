@@ -65,66 +65,7 @@ Validation: Joi
 
 Environment Management: dotenv
 
-📂 Project Structure
-
-src/ <br>
-├── config/ <br>
-│   ├── db.js  <br>
-│   └── envConfig.js <br>
-│<br>
-├── middleware/ <br>
-│   ├── auth.middleware.js <br>
-│   ├── multerConfig.js <br>
-│   ├── uploadValidator.middleware.js <br>
-│   └── validator.middleware.js <br>
-│<br>
-├── module/ <br>
-│   ├── application/ <br>
-│   │   ├── application.controller.js <br>
-│   │   ├── application.service.js <br>
-│   │   ├── application.model.js <br>
-│   │   ├── application.route.js <br>
-│   │   └── application.validator.js <br>
-│   │<br>
-│   ├── company/<br>
-│   │   ├── company.controller.js <br>
-│   │   ├── company.service.js <br>
-│   │   ├── company.model.js <br>
-│   │   ├── company.route.js <br>
-│   │   └── company.validator.js <br>
-│   │<br>
-│   ├── job/ <br>
-│   │   ├── job.controller.js <br>
-│   │   ├── job.service.js <br>
-│   │   ├── job.model.js <br>
-│   │   ├── job.route.js <br>
-│   │   └── job.validator.js <br>
-│   │<br>
-│   └── user/ <br>
-│       ├── user.controller.js <br>
-│       ├── user.service.js <br>
-│       ├── user.model.js <br>
-│       ├── user.route.js <br>
-│       └── user.validator.js <br>
-│ <br>
-├── utils/ <br>
-│   ├── generateResponse.js <br>
-│   ├── jwt.js <br>
-│   └── password.js <br>
-│<br>
-└── uploads/ <br>
-    └── *.pdf / *.docx <br>
-<br>
-root/ <br>
-├── app.js <br>
-├── server.js <br>
-├── package.json <br>
-├── hire-me-postman_collection.json <br>
-├── .env.example <br>
-├── .gitignore <br>
-└── README.md <br>
-
-Create a .env file in the root directory:
+## Create a .env file in the root directory:
 
 PORT=5000 <br>
 MONGO_URI=your_mongodb_connection_string <br>
