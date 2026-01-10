@@ -21,7 +21,11 @@ export const loginUserService = async (data) => {
     
     if(!user) throw new Error("Invalid Credentials");
     
-    await comparePassword(data.password, user.password);
+    const verify = await comparePassword(data.password, user.password);
+
+    if(!verify) {
+        throw new Error("Invalid Credentials!");
+    }
     
     const newAccessToken = accessTokenGenerator(user._id, user.username, user.role);
     const newRefreshToken = refreshTokenGenerator(user._id);
