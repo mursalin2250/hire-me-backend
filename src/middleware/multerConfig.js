@@ -20,12 +20,12 @@ const fileFilter = (req, file, cb) => {
     }else{
         cb(new Error("Only pdf or docx files are allowed"));
     }
-}
+};
 
 const upload = multer({
     storage: storage,
     limits: {fileSize: 5 * 1024 * 1024},
     fileFilter: fileFilter
-})
+});
 
 export default upload;

@@ -17,7 +17,7 @@ export const authenticate = (req,res,next) => {
         console.log(error);
         res.status(401).json({message: error.message});
     }
-}
+};
 
 export const authorizeEmployer = async (req,res,next) => {
     const role = await req.user.role;
@@ -31,7 +31,7 @@ export const authorizeEmployer = async (req,res,next) => {
         console.log(error);
         res.status(401).json({message: error.message});
     }
-}
+};
 
 export const authorizeAdmin = async (req,res,next) => {
     const role = await req.user.role;
@@ -46,5 +46,5 @@ export const authorizeAdmin = async (req,res,next) => {
         console.log(error);
         res.status(401).json({message: error.message});
     }
-}
+};
 

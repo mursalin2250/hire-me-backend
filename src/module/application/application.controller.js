@@ -19,7 +19,7 @@ export const getApplication = async (req,res) => {
         console.log(error);
         res.status(500).json(generateResponse(false, 500, error.message, null));
     }
-}
+};
 
 export const getAllApplication = async (req,res) => {
     try {
@@ -29,7 +29,7 @@ export const getAllApplication = async (req,res) => {
         console.log(error);
         res.status(500).json(generateResponse(false, 500, error.message, null));
     }
-}
+};
 
 export const updateApplication = async (req,res) => {
     try {
@@ -39,7 +39,7 @@ export const updateApplication = async (req,res) => {
         console.log(error);
         res.status(500).json(generateResponse(false, 500, error.message, null));
     }
-}
+};
 
 export const deleteApplication = async (req,res) => {
     try {
@@ -49,4 +49,4 @@ export const deleteApplication = async (req,res) => {
         console.log(error);
         res.status(500).json(generateResponse(false, 500, error.message, null));
     }
-}
+};
