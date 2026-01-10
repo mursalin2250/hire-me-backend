@@ -95,7 +95,6 @@ npm run dev
 #or
 npm start
 
-Server will run on: http://localhost:5000
 ```
 ## 📡 API Documentation
 
