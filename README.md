@@ -12,47 +12,26 @@ Role-based access control (RBAC)
 Secure protected routes using middleware
 
 ## 👥 Roles & Permissions
-Admin
 
-Manage all users (create, update, delete)
+| Role                 | Permissions                                 |
+|----------------------|---------------------------------------------|
+| **Admin**             | - Manage all users (create, update, delete)<br>- View all jobs and applications<br>- Filter users, jobs, and applications |
+| **Employee (Recruiter)** | - Post, update, and delete jobs<br>- View applicants for their jobs<br>- Accept or reject applications |
+| **Job Seeker**        | - View available job listings<br>- Apply for jobs (CV upload required)<br>- Cannot apply to the same job more than once<br>- View personal application history |
 
-View all jobs and applications
-
-Filter users, jobs, and applications
-
-Employee (Recruiter)
-
-Post, update, and delete jobs for their own company only
-
-View applicants for their jobs
-
-Accept or reject applications
-
-Job Seeker
-
-View available job listings
-
-Apply for jobs (CV upload required)
-
-Cannot apply to the same job more than once
-
-View personal application history
 
 ## 📁 File Upload (CV / Resume)
 
-Implemented using Multer (Disk Storage)
 
-Supported formats:
+Job seekers must upload a CV/resume when applying for a job.
 
-PDF (.pdf)
-
-DOCX (.docx)
-
-Maximum file size: 5MB
-
-File type and size validation enforced
-
-Uploaded files are stored on the server filesystem (not in the database)
+| Item               | Details |
+|--------------------|---------|
+| Upload Library     | Multer (Disk Storage) |
+| Allowed Formats    | PDF (`.pdf`), DOCX (`.docx`) |
+| Maximum File Size  | 5 MB |
+| Validation         | File type and size validation enforced |
+| Storage Method     | Server filesystem (files are not stored in the database) |
 
 ## 🧾 Application Handling
 
@@ -86,93 +65,40 @@ Validation: Joi
 
 Environment Management: dotenv
 
-📂 Project Structure
+## 🛡️ Env Configuration
 
-src/ <br>
-├── config/ <br>
-│   ├── db.js  <br>
-│   └── envConfig.js <br>
-│<br>
-├── middleware/ <br>
-│   ├── auth.middleware.js <br>
-│   ├── multerConfig.js <br>
-│   ├── uploadValidator.middleware.js <br>
-│   └── validator.middleware.js <br>
-│<br>
-├── module/ <br>
-│   ├── application/ <br>
-│   │   ├── application.controller.js <br>
-│   │   ├── application.service.js <br>
-│   │   ├── application.model.js <br>
-│   │   ├── application.route.js <br>
-│   │   └── application.validator.js <br>
-│   │<br>
-│   ├── company/<br>
-│   │   ├── company.controller.js <br>
-│   │   ├── company.service.js <br>
-│   │   ├── company.model.js <br>
-│   │   ├── company.route.js <br>
-│   │   └── company.validator.js <br>
-│   │<br>
-│   ├── job/ <br>
-│   │   ├── job.controller.js <br>
-│   │   ├── job.service.js <br>
-│   │   ├── job.model.js <br>
-│   │   ├── job.route.js <br>
-│   │   └── job.validator.js <br>
-│   │<br>
-│   └── user/ <br>
-│       ├── user.controller.js <br>
-│       ├── user.service.js <br>
-│       ├── user.model.js <br>
-│       ├── user.route.js <br>
-│       └── user.validator.js <br>
-│ <br>
-├── utils/ <br>
-│   ├── generateResponse.js <br>
-│   ├── jwt.js <br>
-│   └── password.js <br>
-│<br>
-└── uploads/ <br>
-    └── *.pdf / *.docx <br>
-<br>
-root/ <br>
-├── app.js <br>
-├── server.js <br>
-├── package.json <br>
-├── hire-me-postman_collection.json <br>
-├── .env.example <br>
-├── .gitignore <br>
-└── README.md <br>
-
-Create a .env file in the root directory:
-
-PORT=5000 <br>
-MONGO_URI=your_mongodb_connection_string <br>
-JWT_SECRET=your_jwt_secret <br>
-ACCESS_TOKEN_EXPIRES_IN = time_limit_for_access_token <br> 
-REFRESH_TOKEN_EXPIRES_IN = time_limit_for_refresh_token <br>
-
-▶️ Getting Started <br><br>
+Create a `.env` file in the root directory:
+```bash
+PORT= 
+MONGO_URI=  
+JWT_SECRET=  
+ACCESS_TOKEN_EXPIRES_IN = 
+REFRESH_TOKEN_EXPIRES_IN =
+```
+## ▶️ How to run application locally <br><br>
 1️⃣ Clone the Repository <br>
-git clone https://github.com/your-username/hireme-backend.git <br>
-cd hireme-backend <br>
+```bash
+git clone https://github.com/your-username/hireme-backend.git
+cd hireme-backend
+```
 2️⃣ Install Dependencies <br>
-npm install <br>
+```bash
+npm install
+```
 3️⃣ Configure Environment Variables <br>
 
-Create a .env file and add the required values (see above).
+Create a `.env` file and add the required values (see above).
 
 4️⃣ Run the Server
+```bash
 npm run dev
-or
+#or
 npm start
 
-Server will run on: http://localhost:5000
-
+```
 ## 📡 API Documentation
 
-Complete API documentation is available via Postman
+Complete API documentation (Postman): https://documenter.getpostman.com/view/45503477/2sBXVeGCux
 
 Includes:
 
